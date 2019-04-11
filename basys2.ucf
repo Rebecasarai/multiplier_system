@@ -1,0 +1,58 @@
+# Fichero .ucf para la placa BASYS2 rev C
+
+
+# Conexion de la señal de reloj del sistema_completo al pin del chip FPGA de la placa BASYS2
+# correspondiente al reloj primario que oscila a 50 MHz.
+NET "clk" LOC = "B8"; # Etiqueta mostrada en la placa BASYS2 = MCLK
+NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+# Conexion de las señales del sistema_completo a los pines del chip FPGA de la placa BASYS2
+# correspondientes a los ánodos y cátodos de los displays de 7 segmetos.
+NET "catodo<0>" LOC = "L14"; # Etiqueta mostrada en la placa BASYS2 = CA
+NET "catodo<1>" LOC = "H12"; # Etiqueta mostrada en la placa BASYS2 = CB
+NET "catodo<2>" LOC = "N14"; # Etiqueta mostrada en la placa BASYS2 = CC
+NET "catodo<3>" LOC = "N11"; # Etiqueta mostrada en la placa BASYS2 = CD
+NET "catodo<4>" LOC = "P12"; # Etiqueta mostrada en la placa BASYS2 = CE
+NET "catodo<5>" LOC = "L13"; # Etiqueta mostrada en la placa BASYS2 = CF
+NET "catodo<6>" LOC = "M12"; # Etiqueta mostrada en la placa BASYS2 = CG
+NET "puntodec"  LOC = "N13"; # Etiqueta mostrada en la placa BASYS2 = DP
+NET "anodo<3>"  LOC = "K14"; # Etiqueta mostrada en la placa BASYS2 = AN3
+NET "anodo<2>"  LOC = "M13"; # Etiqueta mostrada en la placa BASYS2 = AN2
+NET "anodo<1>"  LOC = "J12"; # Etiqueta mostrada en la placa BASYS2 = AN1
+NET "anodo<0>"  LOC = "F12"; # Etiqueta mostrada en la placa BASYS2 = AN0
+
+
+# Conexion de las señales del sistema_completo a los pines del chip FPGA de la placa BASYS2
+# correspondientes a los 8 LEDS.
+NET "led<7>" LOC = "G1" ;  # Etiqueta mostrada en la placa BASYS2 = LD7
+NET "led<6>" LOC = "P4" ;  # Etiqueta mostrada en la placa BASYS2 = LD6
+NET "led<5>" LOC = "N4" ;  # Etiqueta mostrada en la placa BASYS2 = LD5
+NET "led<4>" LOC = "N5" ;  # Etiqueta mostrada en la placa BASYS2 = LD4
+NET "led<3>" LOC = "P6" ;  # Etiqueta mostrada en la placa BASYS2 = LD3
+NET "led<2>" LOC = "P7" ;  # Etiqueta mostrada en la placa BASYS2 = LD2
+NET "led<1>" LOC = "M11" ; # Etiqueta mostrada en la placa BASYS2 = LD1
+NET "led<0>" LOC = "M5" ;  # Etiqueta mostrada en la placa BASYS2 = LD0
+
+
+# Conexion de las señales del sistema_completo a los pines del chip FPGA de la placa BASYS2
+# correspondientes a los 8 SWITCHES (Interruptores deslizantes, hacia arriba valen '1').
+NET "num_A_en_SW<3>" LOC = "N3";  # Etiqueta mostrada en la placa BASYS2 = SW7
+NET "num_A_en_SW<2>" LOC = "E2";  # Etiqueta mostrada en la placa BASYS2 = SW6
+NET "num_A_en_SW<1>" LOC = "F3";  # Etiqueta mostrada en la placa BASYS2 = SW5
+NET "num_A_en_SW<0>" LOC = "G3";  # Etiqueta mostrada en la placa BASYS2 = SW4
+NET "num_B_en_SW<3>" LOC = "B4";  # Etiqueta mostrada en la placa BASYS2 = SW3
+NET "num_B_en_SW<2>" LOC = "K3";  # Etiqueta mostrada en la placa BASYS2 = SW2
+NET "num_B_en_SW<1>" LOC = "L3";  # Etiqueta mostrada en la placa BASYS2 = SW1
+NET "num_B_en_SW<0>" LOC = "P11"; # Etiqueta mostrada en la placa BASYS2 = SW0
+
+
+# Conexion de las señales del sistema_completo a los pines del chip FPGA de la placa BASYS2
+# correspondientes a los 4 BOTONES (pulsadores, que estando pulsados meten un '1').
+#NET "SINUSAR"    LOC = "A7";  # Etiqueta mostrada en la placa BASYS2 = BTN3
+NET "botonxs"    LOC = "M4";   # Etiqueta mostrada en la placa BASYS2 = BTN2
+NET "botonreset" LOC = "C11";  # Etiqueta mostrada en la placa BASYS2 = BTN1
+NET "botonclk"   LOC = "G12";  # Etiqueta mostrada en la placa BASYS2 = BTN0
+NET "botonclk" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
